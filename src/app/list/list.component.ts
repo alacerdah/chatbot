@@ -12,10 +12,10 @@ import { ListService } from './list.service';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  private isList: boolean;
-  private isCard: boolean;
-  private star: boolean;
-  private listChatBot: ChatBot[];
+  isList: boolean;
+  isCard: boolean;
+  star: boolean;
+  listChatBot: ChatBot[];
   order: string = '';
   filterName = '';
 

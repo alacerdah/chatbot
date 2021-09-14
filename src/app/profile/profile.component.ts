@@ -9,7 +9,7 @@ import { ChatBot } from '../models/chatbot.model';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-  private detail: ChatBot;
+  detail: ChatBot;
 
   constructor(
     private route: ActivatedRoute,
