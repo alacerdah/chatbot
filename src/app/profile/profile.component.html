@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row">
+    <div class="initial">
+      <div class="left">
+        <div class="mb-15">
+          <div class="icon">
+            <img [src]="detail.image">
+          </div>
+          <div class="mt-5">
+            <h2>{{detail.shortName}}</h2>
+            <span>Id: {{detail.name}}</span>
+          </div>
+        </div>
+        <span class="right">Created at {{detail.created | date: 'dd/MM/yyyy'}}</span>
+      </div>
+      <div class="border-bottom"></div>
+    </div>
+
+    <div class="w-100-p">
+      <div class="cards w-70-p">
+        <div class="cards w-100-p">
+          <div class="card region">
+            <div class="informations">
+              <span>Region and idiom</span>
+              <h3>{{detail.culture}}</h3>
+            </div>
+            <div class="informations">
+              <span>Timezone</span>
+              <h3>(UTC - 03:00) Brasília</h3>
+            </div>
+          </div>
+          <div class="card users">
+            <div class="w-30-p">
+              <div class="icon">
+                <img src="assets/images/user.png">
+              </div>
+            </div>
+            <div class="w-70-p">
+              <div class="informations">
+                <h2>{{detail.analytics.user.actived}}</h2>
+                <span>Usuários ativos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards w-100-p">
+          <div class="card received">
+            <div class="w-30-p">
+              <div class="icon">
+                <img src="assets/images/union.png">
+              </div>
+            </div>
+            <div class="w-70-p">
+              <div class="informations">
+                <h2>{{detail.analytics.message.received}}</h2>
+                <span>Mensagens recebidas</span>
+              </div>
+            </div>
+          </div>
+          <div class="card sended">
+            <div class="w-30-p">
+              <div class="icon">
+                <img src="assets/images/sent.png">
+              </div>
+            </div>
+            <div class="w-70-p">
+              <div class="informations">
+                <h2>{{detail.analytics.message.sent}}</h2>
+                <span>Mensagens enviadas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-30-p account">
+        <img src="assets/images/plano.png" />
+        <h3>Status account</h3>
+        <h2>Free</h2>
+        <button>Update account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

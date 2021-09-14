@@ -1,0 +1,290 @@
+.initial{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem 0;
+}
+.initial .left{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.left .search{
+  display: flex;
+  flex-direction: row;
+}
+
+.form-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.form-search label {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.form-search input {
+  width: 400px;
+  height: 50px;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  outline: none;
+  color: #a6a6a6;
+  font-size: 1rem;
+  border: 1px solid #a6a6a6;
+  border-radius: 8px;
+}
+
+.form-search button {
+  font-size: 100%;
+  background: none;
+  margin: 5px;
+  width: 25px;
+  padding: 0;
+}
+.form-search button img{
+  width: 40px;
+}
+
+.form-search button.order{
+  background: #2cc3d5;
+  width: 11rem;
+  height: 3rem;
+}
+
+.favs{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem 0;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem 0;
+}
+
+.blocks {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.blocks .stars{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.blocks .stars img{
+  width: 30px;
+}
+
+.blocks .block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    background: white;
+    box-shadow: 20px 20px 50px -30px #c1c0c0;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 20px;
+    padding: 20px 25px 10px 25px;
+    width: 110rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.blocks .block:first-child {
+  margin-left: 0;
+}
+
+.icon {
+  border-radius: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.blocks .block img {
+  width: 35px;
+  border-radius: 50%;
+  height: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blocks .block h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+.blocks .block .container {
+  display: block;
+  text-align: left;
+}
+
+.blocks .block span {
+  font-weight: 300;
+  max-width: 240px;
+  margin-bottom: 16px;
+  margin-top: 1rem;
+}
+
+.blocks .block .informations{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+.blocks .block .created-at{
+  width: 12rem;
+}
+.account{
+  display: block;
+  text-align: center;
+}
+.account img{
+  width: 60%;
+  margin-top: 4rem;
+}
+.account h3{
+  font-weight: 300;
+  color: #8e8e8e;
+}
+.account h2{
+  margin-bottom: 20px;
+}
+
+.account button {
+  background: #2cc3d5;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0px;
+  width: 11rem;
+  height: 3rem;
+}
+
+.add-item{
+  position: fixed;
+  background-color: #2cc3d5;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.cards {
+  display: flex;
+  padding: 32px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem 2rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  width: 12rem;
+}
+
+.cards .card:first-child {
+  margin-left: 0;
+}
+
+.card .informations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.card .created-at {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card .icon{
+  padding: 0px;
+  margin-right: 0px;
+}
+
+.cards .card .icon img {
+  width: 80px;
+  border-radius: 50%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.cards .card .stars img {
+  width: 30px;
+}
+
+.cards .card h3 {
+  font-size: 100%;
+  margin: 10px 0 0;
+}
+
+.cards .card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+.cards .card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0;
+}
+
+.cards .card.contact button {
+  background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+.cards .card.shop button {
+  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+.cards .card.about button {
+  background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+}
+
+.cards .card.contact {
+  box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+.cards .card.shop {
+  box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+.cards .card.about {
+  box-shadow: 20px 20px 50px -30px #FFC1D5;
+}

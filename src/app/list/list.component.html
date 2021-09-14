@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="initial">
+      <div class="left">
+        <div class="mb-15">
+            <h1>My chatbots</h1>
+        </div>
+        <div class="right">
+          <div class="form-search">
+            <label for="filterName">
+                <input type="text" id="filterName" name="filterName" [(ngModel)]="filterName" placeholder="Search">
+            </label>
+            <button class="order" (click)="orderBy('name')">Order by name</button>
+            <button class="order" (click)="orderBy('created')">Order by creation</button>
+            <button (click)="cards()"><img src="assets/images/organize-blocks.png"></button>
+            <button (click)="lists()"><img src="assets/images/organize-list.png"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-15 pl-5rem">
+      <h1>Favorities</h1>
+    </div>
+
+    <div *ngIf="isList">
+      <div class="favs">
+        <div class="blocks w-100-p" *ngFor="let item of listChatBot | filter:filterName:'shortName' | sort:[order, 'asc']">
+          <div class="stars" *ngIf="star"><img src="assets/images/star.png"/></div>
+          <div class="stars" *ngIf="!star"><img src="assets/images/favorite.png"/></div>
+          <div class="block" (click)="openProfile(item.shortName)">
+            <div class="informations">
+              <div class="icon"><img [src]="item?.image"></div>
+              <span>{{item?.shortName}}</span>
+            </div>
+            <div class="created-at">
+              <span>{{item?.created | date: 'dd/MM/yyyy'}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="border-bottom"></div>
+      </div>
+    </div>
+
+    <div *ngIf="isCard">
+      <div class="favs">
+        <div class="cards w-100-p" >
+          <div class="card" *ngFor="let item of listChatBot | filter:filterName:'shortName' | sort:[order, 'asc']" (click)="openProfile(item.shortName)">
+            <div class="stars" *ngIf="star"><img src="assets/images/star.png"/></div>
+            <div class="stars" *ngIf="!star"><img src="assets/images/favorite.png"/></div>
+            <div class="informations">
+              <div class="icon"><img [src]="item?.image"></div>
+              <h3>{{item?.shortName}}</h3>
+            </div>
+            <div class="created-at">
+              <span>{{item?.created | date: 'dd/MM/yyyy'}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="add-item" (click)="openDialog()"><img src="assets/images/add.png"></button>

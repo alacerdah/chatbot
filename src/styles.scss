@@ -1,1 +1,96 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8f9;
+  color: #52636c;
+}
+
+.w-30-p{
+  width: 30%;
+  display: flex;
+  margin: 20px;
+}
+
+.w-50-p{
+  width: 50%;
+  display: flex;
+  margin: 20px;
+}
+
+.w-70-p{
+  width: 70%;
+  display: block !important;
+  margin: 20px;
+}
+
+.w-100-p{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.border-bottom{
+  border-bottom: 2px solid #dee8ec;
+  width: 100%;
+  display: block;
+}
+
+.left{
+  text-align: left;
+}
+
+.right{
+  float: right;
+}
+.mt-5{
+  margin-top: 5px;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+
+.pl-5rem{
+  padding-left: 5rem;
+}
+
+.main-footer{
+  display: flex;
+  padding: 3rem 5rem 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+.main-footer p {
+  margin-top: 10px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0px;
+  width: 11rem;
+  height: 3rem;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container-form .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.full-width{
+  width: 100%;
+}

@@ -1,0 +1,156 @@
+// .card {
+//   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+//   transition: 0.3s;
+//   border-radius: 5px;
+// }
+
+// .card:hover {
+//   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+// }
+
+// .container {
+//   padding: 2px 16px;
+// }
+
+// .icon-card{
+//   background-color: #2cc3d5;
+//   border-radius: 100%;
+//   width: 60px;
+//   height: 60px;
+//   text-align: center;
+//   display: block;
+// }
+
+// .icon-card img{
+
+// }
+
+.initial{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem 0;
+}
+.initial .left{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.left .mb-15{
+  display: flex;
+  flex-direction: row;
+}
+.cards {
+  display: flex;
+  padding: 2px 32px 10px;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background: white;
+  box-shadow: 20px 20px 50px -30px #c1c0c0;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
+}
+
+.cards .card:first-child {
+  margin-left: 0;
+}
+
+.icon {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 10px;
+}
+.left .icon{
+  background-color: #dee8ec;
+  width: 70px;
+  height: 70px;
+  padding: 0px;
+  margin-right: 15px;
+}
+.cards .card.users .icon {
+  background-color: #2cc3d5;
+}
+.cards .card.received .icon {
+  background-color: #4dcb7b;
+}
+.cards .card.sended .icon {
+  background-color: #517bf2;
+}
+.cards .card img {
+  width: 35px;
+}
+
+.cards .card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+.cards .card .container {
+  display: block;
+  text-align: left;
+}
+
+.cards .card span {
+  font-weight: 300;
+  max-width: 240px;
+  margin-bottom: 16px;
+}
+
+
+.cards .card.region {
+  padding: 3rem 12rem 3rem 2rem;
+}
+.cards .card.users {
+  padding: 2rem 30rem 3rem 2rem;
+  flex-direction: row;
+}
+.cards .card.received {
+  padding: 2rem 15rem 7rem 2rem;
+  flex-direction: row;
+}
+.cards .card.sended {
+  padding: 2rem 15rem 7rem 2rem;
+  flex-direction: row;
+}
+
+.cards .card .informations{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.account{
+  display: block;
+  text-align: center;
+}
+.account img{
+  width: 60%;
+  margin-top: 4rem;
+}
+.account h3{
+  font-weight: 300;
+  color: #8e8e8e;
+}
+.account h2{
+  margin-bottom: 20px;
+}
+
+.account button {
+  background: #2cc3d5;
+}
+
+.mb-15 .icon img {
+  width: 70px;
+  border-radius: 50%;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+}
